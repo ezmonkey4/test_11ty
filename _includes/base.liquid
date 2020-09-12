@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Your page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+{% include nav.liquid %}
+
+    {{ content }}
+  </body>
+<div>{{ mySpecialNote }}</div>
+
+{% if showCatPicture %}
+  <img src="cat.png" alt="A cat">
+{% endif %}
+
+</html>
